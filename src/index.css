@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,900&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 .container {
   background-color: #f3f2f2;
+  font-family: 'Nunito Sans', sans-serif;
   width: 400px;
   height: 900px;
   margin: 0 auto;
+  position: relative;
 }
 header {
   background-color: #009929;
@@ -12,10 +21,113 @@ header {
   
 }
 header h1 {
-  font-family: 'Nunito Sans', sans-serif;
+  
   font-size: 36;
   text-align: center;
   align-items: center;
   color: #d5e741;
   padding-top: 20px;
 }
+#planta-btn {
+  background-color: #6de61a;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 35;
+  font-weight: 900;
+  position: absolute;
+  top: 110px;
+  left: 160px;
+  border: none;
+}
+
+footer {
+  height: 45px;
+  background-color: #009929;
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+footer p {
+  color: #d5e741;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+#logo {
+  width: 60px;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+.productContainer {
+  margin: 70px auto 0;
+  width: 360px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 140px;
+  height: 160px;
+  background-color: #f3f2f2;
+  border: 3.5px solid #d5e741;
+  border-radius: 15px;
+  position: relative;
+  margin: 20px;
+}
+#cardTitle {
+  margin-top: 10px ;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+#buttonContainer button{
+  background-color: #d5e741;
+  border-radius: 30px;
+  margin: 5px;
+  border: 2px solid #009929;
+  font-size: 9px;
+  padding: 3px;
+ 
+}
+#buttonContainer {
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:30px;
+}
+#indoor {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  width: 45px;
+}
+#price {
+  position: absolute;
+  bottom: 5px;
+  left: 40px;
+  font-size: 14px;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+#stock {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  color: #009929;
+  position: absolute;
+  right: 8px;
+  top: 95px;
+}
+ 
+

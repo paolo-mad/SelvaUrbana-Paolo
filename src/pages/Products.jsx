@@ -1,21 +1,31 @@
+import Card from "../components/Card"
+import PlantaBtn from "../components/PlantaBtn"
+import Logo from "../assets/logo.png"
+
+
 const Products = () => {
     return(
         <>
             <div className="container">
                 <header>
                     <h1>Selva Urbana</h1>
-                    <img src="../assets/logo.png" alt="logo Selva Urbana" />
-                    <img src="" alt="" />
+                   <img src={Logo} alt="" id="logo"/>
+                    <PlantaBtn/>
                 </header>
                 <main>
-                    <button>+planta</button>
-                    <ul>
-                        <li>cards</li>
-                    </ul>
+                    <div className="productContainer">
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>                      
+                    </div>
+                  
                 </main>
                 <footer>
-                    <p>545 553 535</p>
                     <p>selvaurbana@yahoo.com</p>
+                    <p>545 543 826</p>
                     <p>©Selva Urbana</p>
 
                 </footer>
