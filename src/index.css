@@ -101,7 +101,7 @@ footer p {
   display: flex;
   justify-content: space-evenly;
 }
-.card img {
+.plantImg {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -129,6 +129,12 @@ footer p {
   position: absolute;
   right: 8px;
   top: 95px;
+}
+.interiorPlant {
+  width: 50px;
+  position: absolute;
+  top: 40px;
+  right: -5px
 }
  
 
