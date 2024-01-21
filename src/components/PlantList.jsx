@@ -1,16 +1,30 @@
-const PlantList = ({cards}) => {
+import { useEffect, useState } from 'react';
+import Plant from './Plant';
+
+// import Bougainvillea from '../assets/photos/Bougainvillea.webp'
+// import indoor_icon from '../assets/icons/indoor_icon.svg'
+
+
+
+const PlantList = () => {
+
+    const [plants, setPlants] = useState(null);
+
+    useEffect(() => {
+      fetch('http://localhost:3001/products')
+      .then(res => {
+        return res.json()
+      })
+      .then( data => { 
+        setPlants(data)
+      })
+    },[])
 
     return (
-        <div className='plant-list'>
-            {cards.map((card) => (
-                <div className="card" key={card.id}>
-                    <h3 className='cardName'>{card.name}</h3>
-                    <p className="stock">stock {card.stock}</p>
-                    <p className="price">{card.price} €</p>
-                </div>
-            ))}
-        </div>
-    );  
+    <div>
+            {plants && <Plant plants = {plants}/>}
+    </div>
+    )
 }
- 
-export default PlantList;
+
+export default PlantList

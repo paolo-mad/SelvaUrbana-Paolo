@@ -1,4 +1,4 @@
-import Card from "../components/Card"
+import PlantList from "../components/PlantList"
 import PlantaBtn from "../components/PlantaBtn"
 import Logo from "../assets/logo.png"
 
@@ -14,7 +14,7 @@ const Products = () => {
                 </header>
                 <main>
                     <div className="productContainer">
-                            <Card/>                
+                            <PlantList/>                
                     </div>
                   
                 </main>
