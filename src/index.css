@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@1,6..12,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,900&display=swap');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 
 .container {
   background-color: #f3f2f2;
-  font-family: 'Nunito Sans', sans-serif;
   width: 400px;
   height: 900px;
   margin: 0 auto;
@@ -21,7 +21,8 @@ header {
   
 }
 header h1 {
-  
+  font-style: italic;
+  font-weight: 700;
   font-size: 36;
   text-align: center;
   align-items: center;
@@ -79,10 +80,9 @@ footer p {
   position: relative;
   margin: 20px;
 }
-#cardTitle {
+.cardName {
   margin-top: 10px ;
   font-size: 14px;
-  font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
 #buttonContainer button{
@@ -112,18 +112,18 @@ footer p {
   top: 20px;
   width: 45px;
 }
-#price {
+.price {
   position: absolute;
   bottom: 5px;
   left: 40px;
   font-size: 14px;
   color: black;
-  font-family: 'Courier New', Courier, monospace;
-
+  font-weight: 700;
 }
-#stock {
-  font-family: 'Courier New', Courier, monospace;
+.stock {
   font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
   color: #009929;
   position: absolute;
   right: 8px;

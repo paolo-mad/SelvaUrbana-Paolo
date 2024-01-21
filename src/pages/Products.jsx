@@ -14,12 +14,7 @@ const Products = () => {
                 </header>
                 <main>
                     <div className="productContainer">
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>
-                        <Card/>                      
+                            <Card/>                
                     </div>
                   
                 </main>
