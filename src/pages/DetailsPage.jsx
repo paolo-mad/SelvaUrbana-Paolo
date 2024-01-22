@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import Logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
 
 
 const Details = () => {
@@ -20,8 +21,11 @@ const Details = () => {
                     <main>
                         <div className="productContainer">
                             <h2> {plants.name}</h2>
-                            <img src={plants.photo} alt={plants.name} className='plantImg'/>
-                            <p>{plants.description}</p>              
+                            <img src={plants.photo} alt={plants.name} className='plantImgBig'/>
+                            <p className="plantDescription">{plants.description}</p>
+                            <Link to={'/'}>
+                                <button className="backBtn">back</button>              
+                            </Link>
                         </div> 
                     </main>
                     <footer>

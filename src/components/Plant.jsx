@@ -1,25 +1,28 @@
-import { useHistory} from 'react'
+import {useNavigate} from "react-router-dom"
 import { Link } from 'react-router-dom'
+import { useParams } from "react-router-dom";
 
 const Plant = ({plants}) => {
     
-    const history = useHistory
+    const navigate = useNavigate();
+
+    const {id} = useParams();
     const handleClick = ()=> {
-        fetch('http://localhost:3001/products/'+ 1,{
+        fetch('http://localhost:3001/products/'+ id,{
             method: 'DELETE'
         })
-        /* .then(() => {
-            history('./')
-        }) */
+        .then(() => {
+            navigate('./')
+        })
     }
     return (
         <div className='plant-list'>
             {plants.map((plant) => (
                 <div className="card" key={plant.id}>
-                    <Link to={plant.id}>                   
-                    <img src={plant.photo} alt="" className='plantImg'/>
                     <h3 className='cardName'>{plant.name}</h3>
-                    <button className='deleteBtn'>click</button>
+                    <Link to={plant.id}>                   
+                    <img src={plant.photo} alt="" className='plantImg'/> 
+                    <button className='deleteBtn'>view</button>
                     </Link>
 
                     <img src={plant.type} alt="" className='interiorPlant'/>
