@@ -1,29 +1,16 @@
-import { useEffect, useState } from 'react';
 import Plant from './Plant';
-
-// import Bougainvillea from '../assets/photos/Bougainvillea.webp'
-// import indoor_icon from '../assets/icons/indoor_icon.svg'
-
-
+import useFetch from './useFetch';
 
 const PlantList = () => {
 
-    const [plants, setPlants] = useState(null);
-
-    useEffect(() => {
-      fetch('http://localhost:3001/products')
-      .then(res => {
-        return res.json()
-      })
-      .then( data => { 
-        setPlants(data)
-      })
-    },[])
-
+    const {data: plants, isPending, error} = useFetch('http://localhost:3001/products/')
+    
     return (
-    <div>
-            {plants && <Plant plants = {plants}/>}
-    </div>
+      <div>
+          {error && <div>{error}</div>}
+          {isPending && <div>Loading...</div>}
+          {plants && <Plant plants = {plants}/>}
+      </div>
     )
 }
 

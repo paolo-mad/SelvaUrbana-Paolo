@@ -1,4 +1,5 @@
 import { useHistory} from 'react'
+
 const Plant = ({plants}) => {
     
     const history = useHistory
@@ -6,9 +7,9 @@ const Plant = ({plants}) => {
         fetch('http://localhost:3001/products/'+ 1,{
             method: 'DELETE'
         })
-        .then(() => {
+        /* .then(() => {
             history('./')
-        })
+        }) */
     }
     return (
         <div className='plant-list'>
