@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,900&display=swap');
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
-
 
 .container {
   background-color: #f3f2f2;
@@ -18,7 +21,6 @@
 header {
   background-color: #009929;
   height: 73px;
-  
 }
 header h1 {
   font-style: italic;
@@ -81,7 +83,7 @@ footer p {
   margin: 40px 18px;
 }
 .cardName {
-  margin-top: 10px ;
+  margin-top: 10px;
   font-size: 14px;
   text-align: center;
 }
@@ -93,7 +95,7 @@ footer p {
   margin: 5px;
   border: 2px solid #009929;
   font-size: 9px;
-  padding: 4px
+  padding: 4px;
 }
 #buttonContainer {
   position: absolute;
@@ -105,7 +107,7 @@ footer p {
   width: 100px;
   height: 100px;
   position: absolute;
-  top:30px;
+  top: 30px;
 }
 #indoor {
   position: absolute;
@@ -134,7 +136,5 @@ footer p {
   width: 50px;
   position: absolute;
   top: 40px;
-  right: -5px
+  right: -5px;
 }
- 
-
