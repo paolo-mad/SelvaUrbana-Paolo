@@ -1,5 +1,5 @@
 import Plant from './Plant';
-import useFetch from './useFetch';
+import useFetch from '../hooks/useFetch';
 
 const PlantList = () => {
 
