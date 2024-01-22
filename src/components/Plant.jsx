@@ -1,4 +1,5 @@
 import { useHistory} from 'react'
+import { Link } from 'react-router-dom'
 
 const Plant = ({plants}) => {
     
@@ -15,13 +16,18 @@ const Plant = ({plants}) => {
         <div className='plant-list'>
             {plants.map((plant) => (
                 <div className="card" key={plant.id}>
+                    <Link to={plant.id}>                   
                     <img src={plant.photo} alt="" className='plantImg'/>
-                    <img src={plant.type} alt="" className='interiorPlant'/>
                     <h3 className='cardName'>{plant.name}</h3>
+                    <button className='deleteBtn'>click</button>
+                    </Link>
+
+                    <img src={plant.type} alt="" className='interiorPlant'/>
                     <p className="stock">{plant.stock} <br />stock</p>
                     <p className="price">{plant.price} €</p>
 
-                    <button className="deleteBtn" onClick={handleClick}>delete</button>
+                    {/* <button className="deleteBtn" onClick={handleClick}>delete</button> */}
+                    
                 </div>
             ))}
         </div>

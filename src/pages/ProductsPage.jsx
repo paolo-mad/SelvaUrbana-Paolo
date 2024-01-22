@@ -14,9 +14,8 @@ const Products = () => {
                 </header>
                 <main>
                     <div className="productContainer">
-                            <PlantList/>                
-                    </div>
-                  
+                        <PlantList/>                
+                    </div> 
                 </main>
                 <footer>
                     <p>selvaurbana@yahoo.com</p>
