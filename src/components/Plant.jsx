@@ -29,7 +29,7 @@ const Plant = ({plants}) => {
                     <p className="stock">{plant.stock} <br />stock</p>
                     <p className="price">{plant.price} €</p>
 
-                    {/* <button className="deleteBtn" onClick={handleClick}>delete</button> */}
+                   s
                     
                 </div>
             ))}
