@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;1,6..12,900&display=swap");
 
 * {
@@ -88,7 +84,7 @@ footer p {
   text-align: center;
 }
 .backBtn{
-  position: absolute;
+  position: relative;
   bottom: 40px;
   background-color: #d5e741;
   border-radius: 30px;
@@ -98,7 +94,7 @@ footer p {
   padding: 4px;
 }
 .deleteBtn {
-  position: absolute;
+  
   bottom: -40px;
   background-color: #d5e741;
   border-radius: 30px;
@@ -107,9 +103,7 @@ footer p {
   font-size: 9px;
   padding: 4px;
 }
-#buttonContainer {
-  position: absolute;
-  bottom: -40px;
+.buttonContainer {
   display: flex;
   justify-content: space-evenly;
 }
@@ -192,5 +186,10 @@ footer p {
   border-radius: 8px;
   cursor: pointer;
 }
+@media (min-width:601px) {
 
+.container {
+  width: 100%;
+}
+}
 

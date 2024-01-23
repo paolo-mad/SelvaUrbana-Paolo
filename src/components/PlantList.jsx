@@ -12,6 +12,7 @@ const PlantList = () => {
           {plants && <Plant plants = {plants}/>}
       </div>
     )
-}
+  }
 
+    
 export default PlantList
