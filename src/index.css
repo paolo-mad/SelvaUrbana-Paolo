@@ -71,6 +71,8 @@ footer p {
   min-height: 700px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center; /* Añade esta línea para centrar verticalmente */
+  justify-content: center; /* Añade esta línea para centrar horizontalmente */
 }
 
 .card {
@@ -89,6 +91,7 @@ footer p {
 }
 .backBtn{
   position: absolute;
+  text-align: center;
   bottom: 40px;
   background-color: #d5e741;
   border-radius: 30px;
@@ -192,5 +195,6 @@ footer p {
   border-radius: 8px;
   cursor: pointer;
 }
+
 
 

@@ -24,7 +24,7 @@ const Details = () => {
                             <img src={plants.photo} alt={plants.name} className='plantImgBig'/>
                             <p className="plantDescription">{plants.description}</p>
                             <Link to={'/'}>
-                                <button className="backBtn">back</button>              
+                                <button className="backBtn">atrás</button>              
                             </Link>
                         </div> 
                     </main>
