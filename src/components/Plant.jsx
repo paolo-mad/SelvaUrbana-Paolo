@@ -1,24 +1,22 @@
 import {useNavigate} from "react-router-dom"
 import { Link } from 'react-router-dom'
-import { useParams } from "react-router-dom";
-
 
 
 const Plant = ({plants}) => {
     
     const navigate = useNavigate();
 
-    const { id } = useParams();
-
-    async function handleDelete () {
+    async function handleDelete (id) {
         try {
             console.log('Deleting plant with ID:', id);
-            const response = await fetch('http://localhost:3001/products/${id}',
-            {method: 'DELETE'
+            const response = await fetch('http://localhost:3001/products/'+ id, {
+                method: 'DELETE'
+    
         });
             if (response.ok) {
                 
                 console.log(`Plant with ID ${id} deleted successfully`);
+                window.location.reload();
                 navigate('./'); 
             } else {
                 console.error(`Error deleting plant with ID ${id}`);
@@ -42,7 +40,7 @@ const Plant = ({plants}) => {
                         <button className='actionBtn'>Ver</button>
                         </Link>
                         <button className='actionBtn'>Editar</button>
-                        <button className='actionBtn' onClick={handleDelete}>Borrar</button>
+                        <button className='actionBtn' onClick={() => handleDelete(plant.id)}>Borrar {plant.id}</button>
                     </div>
 
                     <img src={plant.type} alt="" className='interiorPlant'/>

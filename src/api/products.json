@@ -26,30 +26,6 @@
       "stock": "8",
       "price": "9",
       "description": "Esta planta, ubicada en este espacio clave de la casa, se convertirá en un talismán de la buena suerte y además actuará como filtro energético ahuyentando las energías negativas que pueden ingresar desde afuera."
-    },
-    {
-      "id": "948a",
-      "name": "clavel",
-      "price": "5",
-      "stock": "3",
-      "description": "Red clavel",
-      "type": "indoor"
-    },
-    {
-      "id": "d951",
-      "name": "zzzzzzzzz",
-      "price": "56",
-      "stock": "34",
-      "description": "ggggggggggggg",
-      "type": "indoor"
-    },
-    {
-      "id": "80d3",
-      "name": "tulip",
-      "price": "12",
-      "stock": "50",
-      "description": "Red Tulip",
-      "type": "indoor"
     }
   ]
 }

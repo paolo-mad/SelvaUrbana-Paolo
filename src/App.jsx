@@ -13,7 +13,6 @@ function App() {
         <Routes>
           <Route exact path='/' element={ <Products/>} />
           <Route path='/create' element={ <Create/>}/>
-          <Route path='/:id' element={<Plant/>} />
           <Route path='/:id' element={ <Details/> }/>
         </Routes>
       </>    
