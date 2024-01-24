@@ -1,24 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Bougainvillea",
-      "photo": "/photos/Bougainvillea.webp",
-      "type": "/icons/indoor_icon.svg",
-      "stock": "8",
-      "price": "9",
-      "description": "Esta planta, ubicada en este espacio clave de la casa, se convertirá en un talismán de la buena suerte y además actuará como filtro energético ahuyentando las energías negativas que pueden ingresar desde afuera."
-    },
-    {
-      "id": "2",
-      "name": "Bougainvillea",
-      "photo": "/photos/Bougainvillea.webp",
-      "type": "/icons/indoor_icon.svg",
-      "stock": "8",
-      "price": "9",
-      "description": "Esta planta, ubicada en este espacio clave de la casa, se convertirá en un talismán de la buena suerte y además actuará como filtro energético ahuyentando las energías negativas que pueden ingresar desde afuera."
-    },
-    {
       "id": "3",
       "name": "Bougainvillea",
       "photo": "/photos/Bougainvillea.webp",
