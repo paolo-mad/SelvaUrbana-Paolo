@@ -12,7 +12,7 @@
 
 .container {
   background-color: #f3f2f2;
-  width: /*393px*/100%;
+ min-width: 300px;
   min-height: /*852px*/100vh;
   margin: 0;
  
@@ -42,7 +42,7 @@ header h1 {
 .navBar{
   padding: 1.4rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 17px;
 }
 #planta-btn {
   background-color: #6de61a;
@@ -241,7 +241,7 @@ footer p {
 
   }
   .navBar{
-    font-size: 35px;
+    font-size: 30px;
   }
   #planta-btn {
     font-size: 30px;
@@ -250,6 +250,8 @@ footer p {
   .container {
     display: flex;
     justify-content: space-between;
+    max-width: 1400px;
+
   }
 
   footer {
@@ -268,5 +270,10 @@ footer p {
 
   font-size: 15px;
 
+}
+.card {
+  width: 145px;
+  height: 210px;
+  margin: 10px 18px;
 }
 }
