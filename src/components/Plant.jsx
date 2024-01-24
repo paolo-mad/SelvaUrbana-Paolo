@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 const Plant = ({plants}) => {
-    
+
     const navigate = useNavigate();
 
     async function handleDelete (id) {

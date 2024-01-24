@@ -7,11 +7,15 @@ const Products = () => {
     return(
         <>
             <div className="container">
-                <header>
+                <header className="header">
                     <h1>Selva Urbana</h1>
                    <img src={Logo} alt="" id="logo"/>
-                    <PlantaBtn/>
                 </header>
+                <nav className="navBar">
+                   <p>Añade tu planta a la colección única de plantas que es Selva Urbana</p>
+                    <PlantaBtn/>
+                </nav>
+                
                 <main>
                     <div className="productContainer">
                         <PlantList/>                
@@ -19,7 +23,7 @@ const Products = () => {
                 </main>
                 <footer>
                     <p>selvaurbana@yahoo.com</p>
-                    <p>545 543 826</p>
+                    <p>Tel. 545543826</p>
                     <p>©Selva Urbana</p>
 
                 </footer>
