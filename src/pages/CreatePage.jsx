@@ -10,8 +10,7 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
 
-    //"photo":"/photos/Costilla.webp",
-
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         const plant = {name, price, stock, description, type} 
@@ -32,43 +31,52 @@ const Create = () => {
 
     return (
         <div className="create">
-            <h2>add a new plant</h2>
+            <div className="title_card">
+                <img src="/public/photos/logo_selva_urbana.png" alt="logo Selva Urbana" /> 
+                <p>Selva Urbana</p>
+            </div>
             <form onSubmit={handleSubmit }>
-                <label>plant name</label>
+                <label>Nombre de la Planta</label>
                 <input type="text " 
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
-                <label>price</label>
+                <label>Imagen
+                    <input type="file" 
+                        accept=".png, .webp"
+                        required
+                    /> 
+                </label>   
+                <label>Precio</label>
                 <input type="text" 
                     required
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                 />
-                <label>quantity</label>
+                <label>Cantidad en stock</label>
                 <input type="text " 
                     required
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
                 />
-                <label>description</label>
+                <label>Descripción</label>
                 <textarea 
                     required
                     value={description}
                     onChange={(e)=> setDescription(e.target.value)}
                 >              
                 </textarea> 
-                <label>indoor/outdoor</label>
+                <label>Interior / Exterior</label>
                 <select
                     value={type}
                     onChange={(e) => setType(e.target.value)}
                 >
-                    <option value="indoor">indoor</option>
-                    <option value="outdoor">outdoor</option>
+                    <option value="indoor">Interior</option>
+                    <option value="outdoor">Exterior</option>
                 </select>
-                {!isPending && <button>add plant</button>}
-                {isPending && <button disabled >adding plant...</button>}
+                {!isPending && <button>Adicionar Planta</button>}
+                {isPending && <button disabled >adicionar planta...</button>}
             </form>
         </div>
      );
