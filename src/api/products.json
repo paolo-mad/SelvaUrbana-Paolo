@@ -34,6 +34,22 @@
       "stock": "3",
       "description": "Red clavel",
       "type": "indoor"
+    },
+    {
+      "id": "d951",
+      "name": "zzzzzzzzz",
+      "price": "56",
+      "stock": "34",
+      "description": "ggggggggggggg",
+      "type": "indoor"
+    },
+    {
+      "id": "80d3",
+      "name": "tulip",
+      "price": "12",
+      "stock": "50",
+      "description": "Red Tulip",
+      "type": "indoor"
     }
   ]
 }
