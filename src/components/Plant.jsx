@@ -40,7 +40,7 @@ const Plant = ({plants}) => {
                         <button className='actionBtn'>Ver</button>
                         </Link>
                         <button className='actionBtn'>Editar</button>
-                        <button className='actionBtn' onClick={() => handleDelete(plant.id)}>Borrar {plant.id}</button>
+                        <button className='actionBtn' onClick={() => handleDelete(plant.id)}>Borrar</button>
                     </div>
 
                     <img src={plant.type} alt="" className='interiorPlant'/>
