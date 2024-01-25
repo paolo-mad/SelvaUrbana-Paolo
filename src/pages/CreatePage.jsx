@@ -84,10 +84,10 @@ const Create = () => {
                     <option value="/icons/indoor_icon.svg">interior</option>
                     <option value="/icons/outdoor_icon.svg">exterior</option>
                 </select>
-                {!isPending && <button>Adicionar Planta</button>}
-                {isPending && <button disabled >adicionar planta...</button>}
-                {!isPending && <button>add plant</button>}
-                {isPending && <button disabled >adding plant...</button>}
+                {!isPending && <button>Añadir Planta</button>}
+                {isPending && <button disabled >Añadir planta...</button>}
+                {/* {!isPending && <button>add plant</button>} */}
+                {/* {isPending && <button disabled >adding plant...</button>} */}
 
                 <Link to="/">
                 <button>Atrás</button>
