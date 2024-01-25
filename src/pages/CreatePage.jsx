@@ -84,8 +84,8 @@ const Create = () => {
                     <option value="indoor">interior</option>
                     <option value="outdoor">exterior</option>
                 </select>
-                {!isPending && <button>add plant</button>}
-                {isPending && <button disabled >adding plant...</button>}
+                {!isPending && <button>Adicionar Planta</button>}
+                {isPending && <button disabled >adicionar planta...</button>}
             </form>
         </div>
      );
