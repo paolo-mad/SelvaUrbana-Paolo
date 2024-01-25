@@ -13,12 +13,11 @@ const Details = () => {
             { error && <div>{error}</div>}
             {plants && (
                 <>
-                    <div className="container">
+                    <div className="details_container">
                     <header>
+                        <img src={Logo} alt="" id="logo"/>
                         <h1>Selva Urbana</h1>
-                        
                     <img src={Logo} alt="" id="logo"/>
-                   
                     </header>
                     <main>
                         <div className="details-container">
