@@ -1,7 +1,6 @@
 import {useNavigate} from "react-router-dom"
 import { Link } from 'react-router-dom'
 
-
 const Plant = ({plants}) => {
 
     const navigate = useNavigate();
@@ -25,25 +24,24 @@ const Plant = ({plants}) => {
         } catch (error) {
           console.error("Error deleting plant:", error);
         }
-      };
+      }
     
       return (
         <div className='plant-list'>
             {plants.map((plant) => (
                 <div className="card" key={plant.id}>
                     <h3 className='cardName'>{plant.name}</h3>
-                    <Link to={plant.id}>
+                    <Link to={`/details/${plant.id}`}>
                     <img src={plant.photo} alt="" className='plantImg'/>
                     </Link>
                     <div className="buttonContainer">
-                        <Link to={plant.id}>
+                        <Link to={`/details/${plant.id}`}>
                         <button className='actionBtn'>Ver</button>
                         </Link>
                         <Link to={`/edit/${plant.id}`}>
                         <button className='actionBtn'>Editar</button>
                         </Link>
                         <button className='actionBtn' onClick={() => handleDelete(plant.id)}>Borrar</button>
-                        
                     </div>
 
                     <img src={plant.type} alt="" className='interiorPlant'/>

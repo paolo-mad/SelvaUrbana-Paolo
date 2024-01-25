@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 
-
 const Update = () =>  {
     const [data, setData] = useState({
         name: "",
@@ -15,14 +14,14 @@ const Update = () =>  {
 
     });
     const {id} = useParams();
-    const url = http://localhost:3001/products/${id}
+    const url = `http://localhost:3001/products/${id}`
 
     useEffect(() => {
 
 fetch(url)
   .then(response => {
     if (!response.ok) {
-      throw new Error(HTTP error! Status: ${response.status});
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
     return response.json();
   })
@@ -39,7 +38,7 @@ const navigate = useNavigate()
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(url,{
+    fetch(url,{  
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
@@ -62,8 +61,9 @@ const handleImageChange = (event) => {
       reader.readAsDataURL(file);
     }
   };
-return (
-        <div className="create">
+    
+    return (
+        <div className="create">  
         <form onSubmit={handleSubmit }>
             <label>Nombre</label>
             <input type="text " 
@@ -73,7 +73,7 @@ return (
             />
             <label>Imagen</label>
             <input type="file"
-
+                
                 onChange={handleImageChange} />
                 {data.photo && <img src={data.photo} alt="Planta Seleccionada" style={{width:'200px'}}/>}
 
@@ -90,11 +90,11 @@ return (
                 onChange={(e) => setData({...data, stock: e.target.value})}
             />
             <label>Descripción</label>
-            <textarea>
+            <textarea 
                 required
                 value={data.description}
                 onChange={(e) => setData({...data, description: e.target.value})}
-
+            >              
             </textarea> 
             <label>interior/exterior</label>
             <select
@@ -110,5 +110,5 @@ return (
  );
 }
 
-
 export default Update
+
