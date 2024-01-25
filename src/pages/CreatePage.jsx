@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom"
 
 const Create = () => {
     const [name, setName] = useState('');
+    const [photo, setPhoto] = useState(null);
     const [price, setPrice] = useState(0);
     const [stock, setStock] = useState(0);
     const [description, setDescription] = useState('');
@@ -11,10 +12,20 @@ const Create = () => {
     const navigate = useNavigate()
 
     //"photo":"/photos/Costilla.webp",
+    const handleImageChange = (event) => {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            if (reader.readyState === FileReader.DONE) {
+                setPhoto(reader.result);
+            }
+        };
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        const plant = {name, price, stock, description, type} 
+        const plant = {name, photo, price, stock, description, type} 
 
         setIsPending(true);
         
@@ -32,40 +43,46 @@ const Create = () => {
 
     return (
         <div className="create">
-            <h2>add a new plant</h2>
+            <h2>Añadir nueva planta</h2>
             <form onSubmit={handleSubmit }>
-                <label>plant name</label>
+                <label>Nombre</label>
                 <input type="text " 
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                 />
-                <label>price</label>
+                <label>Imagen</label>
+                <input type="file"
+                    required
+                    onChange={handleImageChange} />
+                    {photo && <img src={photo} alt="Planta Seleccionada" />}
+
+                <label>Precio</label>
                 <input type="text" 
                     required
                     value={price}
                     onChange={(e) => setPrice(e.target.value)}
                 />
-                <label>quantity</label>
+                <label>Stock</label>
                 <input type="text " 
                     required
                     value={stock}
                     onChange={(e) => setStock(e.target.value)}
                 />
-                <label>description</label>
+                <label>Descripción</label>
                 <textarea 
                     required
                     value={description}
                     onChange={(e)=> setDescription(e.target.value)}
                 >              
                 </textarea> 
-                <label>indoor/outdoor</label>
+                <label>interior/exterior</label>
                 <select
                     value={type}
                     onChange={(e) => setType(e.target.value)}
                 >
-                    <option value="indoor">indoor</option>
-                    <option value="outdoor">outdoor</option>
+                    <option value="indoor">interior</option>
+                    <option value="outdoor">exterior</option>
                 </select>
                 {!isPending && <button>add plant</button>}
                 {isPending && <button disabled >adding plant...</button>}
