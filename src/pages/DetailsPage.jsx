@@ -16,19 +16,23 @@ const Details = () => {
                     <div className="container">
                     <header>
                         <h1>Selva Urbana</h1>
+                        
                     <img src={Logo} alt="" id="logo"/>
+                   
                     </header>
                     <main>
-                        <div className="productContainer">
+                        <div className="details-container">
                             <h2> {plants.name}</h2>
+                            <div className="image-container">
                             <img src={plants.photo} alt={plants.name} className='plantImgBig'/>
+                            </div>
                             <p className="plantDescription">{plants.description}</p>
                             <Link to={'/'}>
-                                <button className="backBtn">back</button>              
+                                <button className="backBtn">atrás</button>              
                             </Link>
                         </div> 
                     </main>
-                    <footer>
+                    <footer className="details-footer">
                         <p>selvaurbana@yahoo.com</p>
                         <p>545 543 826</p>
                         <p>©Selva Urbana</p>
@@ -44,4 +48,3 @@ const Details = () => {
 }
 
 export default Details
- 

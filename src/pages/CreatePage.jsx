@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {useNavigate} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Create = () => {
     const [name, setName] = useState('');
@@ -7,7 +8,7 @@ const Create = () => {
     const [price, setPrice] = useState(0);
     const [stock, setStock] = useState(0);
     const [description, setDescription] = useState('');
-    const [type, setType] = useState('indoor');
+    const [type, setType] = useState("/icons/indoor_icon.svg");
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
 
@@ -54,9 +55,8 @@ const Create = () => {
                 <label>Imagen</label>
                 <input type="file"
                     required
-                    onChange={handleImageChange} />
-                    {photo && <img src={photo} alt="Planta Seleccionada" />}
-
+                    onChange={handleImageChange}
+                    />
                 <label>Precio</label>
                 <input type="text" 
                     required
@@ -81,11 +81,15 @@ const Create = () => {
                     value={type}
                     onChange={(e) => setType(e.target.value)}
                 >
-                    <option value="indoor">interior</option>
-                    <option value="outdoor">exterior</option>
+                    <option value="/icons/indoor_icon.svg">interior</option>
+                    <option value="/icons/outdoor_icon.svg">exterior</option>
                 </select>
                 {!isPending && <button>add plant</button>}
                 {isPending && <button disabled >adding plant...</button>}
+
+                <Link to="/">
+                <button>Atrás</button>
+                </Link>
             </form>
         </div>
      );
