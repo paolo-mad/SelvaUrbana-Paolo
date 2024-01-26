@@ -12,7 +12,7 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false)
     const navigate = useNavigate()
 
-    //"photo":"/photos/Costilla.webp",
+    
     const handleImageChange = (event) => {
         const file = event.target.files[0];
         const reader = new FileReader();
