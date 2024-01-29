@@ -10,15 +10,6 @@
       "description": "Esta planta, ubicada en este espacio clave de la casa, se convertirá en un talismán de la buena suerte y además actuará como filtro energético ahuyentando las energías negativas que pueden ingresar desde afuera."
     },
     {
-      "id": "1",
-      "name": "Planta Estrella",
-      "photo": "/photos/planta_estrella.webp",
-      "type": "/icons/indoor_icon.svg",
-      "stock": "12",
-      "price": "6.50",
-      "description": "Crece bien en sombra parcial, así que puede tenerse en interiores, siempre junto a una ventana que provea iluminación durante algunas horas al día. Crece de 10 a 20 centímetros de diámetro. Produce de una a ocho flores grandes, normalmente amarillas a blancas."
-    },
-    {
       "id": "2",
       "name": "Margarita",
       "photo": "/photos/margarita.jpg",
@@ -35,15 +26,6 @@
       "stock": "10",
       "price": "18.00",
       "description": "Sorprende por su belleza, por su espectacular floración y porque nunca pierde las hojas, ni estas su color verde brillante, por mucho que llegue el invierno."
-    },
-    {
-      "id": "5",
-      "name": "Lavanda",
-      "photo": "/photos/lavanda.jpg",
-      "type": "/icons/outdoor_icon.svg",
-      "stock": "25",
-      "price": "3.90",
-      "description": "La lavanda es una planta aromática conocida por sus flores violetas y fragancia relajante. Fácil de cuidar, resistente y versátil, se utiliza en aromaterapia y decoración. Ideal para jardines soleados, sus usos incluyen aceites esenciales y decoración."
     },
     {
       "id": "ec9e",

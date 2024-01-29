@@ -5,8 +5,9 @@ import { Link } from "react-router-dom";
 
 
 const Details = () => {
+    const url = 'https://selva-api.vercel.app/products/'
     const {id} = useParams();
-    const {data: plants, error, isPending } = useFetch('http://localhost:3001/products/'+ id)
+    const {data: plants, error, isPending } = useFetch(url + id)
     return (
         <div className="plant-details">
             { isPending && <div>loading...</div>}

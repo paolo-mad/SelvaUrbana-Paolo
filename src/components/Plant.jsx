@@ -8,7 +8,7 @@ const Plant = ({plants}) => {
     async function handleDelete (id) {
         try {
             console.log('Deleting plant with ID:', id);
-            const response = await fetch('http://localhost:3001/products/'+ id, {
+            const response = await fetch('https://selva-api.vercel.app/products/'+ id, {
                 method: 'DELETE'
     
         });

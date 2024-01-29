@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom"
 import { Link } from "react-router-dom";
 
 const Create = () => {
+    const url = 'https://selva-api.vercel.app/products/'
     const [name, setName] = useState('');
     const [photo, setPhoto] = useState(null);
     const [price, setPrice] = useState(0);
@@ -30,7 +31,7 @@ const Create = () => {
 
         setIsPending(true);
         
-        fetch('http://localhost:3001/products',{  
+        fetch(url,{  
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(plant)

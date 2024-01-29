@@ -14,7 +14,7 @@ const Update = () =>  {
 
     });
     const {id} = useParams();
-    const url = `http://localhost:3001/products/${id}`
+    const url = `https://selva-api.vercel.app/products/${id}`
 
     useEffect(() => {
 
