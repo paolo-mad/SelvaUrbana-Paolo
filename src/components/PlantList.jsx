@@ -3,7 +3,7 @@ import useFetch from '../hooks/useFetch';
 
 const PlantList = () => {
 
-    const {data: plants, isPending, error} = useFetch('http://localhost:3001/products/')
+    const {data: plants, isPending, error} = useFetch('https://selva-api.vercel.app/products/')
     
     return (
       <>
