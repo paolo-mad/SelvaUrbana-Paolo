@@ -11,11 +11,8 @@ const Products = () => {
                     <h1>Selva Urbana</h1>
                    <img src={Logo} alt="" id="logo"/>
                 </header>
-                <nav className="navBar">
                    <p>Añade tu planta a la colección única de plantas que es Selva Urbana</p>
-                    <PlantaBtn/>
-                </nav>
-                
+                    <PlantaBtn/>               
                 <main>
                     <div className="productContainer">
                         <PlantList/>                

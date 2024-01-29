@@ -245,22 +245,22 @@ footer p {
   font-weight: 700;
 }
 
+/* ///////////////////////////////////////////////// */
+
 @media screen and (min-width: 768px) {
   header{
-    justify-content: space-between;
     letter-spacing: 8px;
-    height: 8rem;
+    height: 145PX;
+
   }
   header h1 {
-    font-size: 45px; 
+    font-size: 82px; 
     margin-left: 55px;
+    text-align: center;
   }
   #logo {
     width: 120px;
 
-  }
-  .navBar{
-    font-size: 30px;
   }
   #planta-btn {
     font-size: 30px;
@@ -268,7 +268,6 @@ footer p {
 
   .container {
     display: flex;
-    justify-content: space-between;
     width: 100%;
     height: 100vh;
   }
