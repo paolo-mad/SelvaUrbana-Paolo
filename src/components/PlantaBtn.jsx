@@ -5,7 +5,7 @@ const PlantaBtn = () => {
        
     }
     return (
-        <Link to={'/create'}>
+        <Link to={'/create'} className='x'>
             <button id="planta-btn" onClick={handleClick}>+ Planta</button>
         </Link>
     )

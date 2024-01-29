@@ -11,8 +11,11 @@ const Products = () => {
                     <h1>Selva Urbana</h1>
                    <img src={Logo} alt="" id="logo"/>
                 </header>
-                   <p>Añade tu planta a la colección única de plantas que es Selva Urbana</p>
-                    <PlantaBtn/>               
+                    <div className="addPlant">
+                        <p className="anadeTxt">Añade tu planta a la colección única de plantas que es Selva Urbana</p>
+                        <PlantaBtn/>        
+                    </div>
+                      
                 <main>
                     <div className="productContainer">
                         <PlantList/>                
